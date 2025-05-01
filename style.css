@@ -1,0 +1,97 @@
+/* Reset & base styles */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+ .bong {
+  list-style: none;
+}
+
+ .bong a {
+  text-decoration:none;
+  color: white; 
+}
+ .bong a:hover {
+  font-size: 20px;
+  color: orange;
+  border-style: outset;
+  border-width:2px;
+  border-radius:8px;
+  padding:4px;
+}
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://d2ub1k1pknil0e.cloudfront.net/media/images/camera-photography.2e16d0ba.fill-1200x630.format-jpeg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black
+}
+/* Gallery Preview */
+.gallery-preview {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap:wrap;
+  width: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.gallery-grid img {
+  margin:10px;
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive nav (for smaller screens) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
