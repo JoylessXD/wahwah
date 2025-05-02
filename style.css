@@ -22,6 +22,7 @@ body, h1, h2, h3, p, ul {
   padding: 2px;
   display:inline;
   position:relative;
+  transition: transform .5s ease;
 }
 
  .bong li:hover {
@@ -56,12 +57,13 @@ nav ul {
   gap: 1rem;
 }
 .imgflip {
- perspective:30px;
+ perspective:200px;
  margin: 0 auto;
- width:auto;
+ width:30%;
  height: 100px;
  text-align:center;
  overflow:hidden;
+ z-index:5;
 }
 .imgflip img {
  width:120px;
@@ -90,6 +92,7 @@ height:100%;
 transform-style:preserve-3d;
 transition: transform 0.8s;
 }
+
 .imgflip:hover .flipper{
 transform:rotateY(180deg);
 }
@@ -146,3 +149,4 @@ footer {
     flex-direction: column;
     margin-top: 1rem;
   }
+}
